@@ -5,8 +5,10 @@ import requests
 from pathlib import *
 from progress.bar import Bar
 
-access_token = '55d08f7555d08f7555d08f75bc55abee21555d055d08f7537c344ac34a4d4724bbae97a'
-token = 'AQAAAAAHuFHtAADLW9lZHWpSlk9OhTfIGsDaHOk'
+Ytoken = ''
+
+
+access_token = ''
 user_id = '47535255'
 album_id = 'profile'
 extended = '1'
@@ -34,7 +36,7 @@ file_list = os.listdir(Path.cwd() / "Folder")
 
 urly = 'https://cloud-api.yandex.net/v1/disk/resources'
 requests.get(urly)
-headers = {'Content-Type': 'application/json', 'Accept': 'application/json', 'Authorization': f'OAuth {token}'}
+headers = {'Content-Type': 'application/json', 'Accept': 'application/json', 'Authorization': f'OAuth {Ytoken}'}
 
 
 # def create_folder(path):
